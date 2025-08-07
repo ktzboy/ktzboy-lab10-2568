@@ -31,7 +31,6 @@ export default function RandomUserPage() {
     );
     const users = resp.data.results;
     const cleanUsers = users.map((user: any) => cleanUser(user));
-    console.log(cleanUsers);
     setUsers(cleanUsers);
     setIsLoading(false);
     //Your code here
